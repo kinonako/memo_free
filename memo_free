@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(void){
+    srand(time(NULL));
+    int r,s,N;
+    cin >> N >> s;
+    if(N >= s){
+        cout << "最大値は" << N << endl;
+        r = rand() % N + 1;
+        cout << "あなたが選んだ数は" << s << endl;
+        cout << "結果は..." << endl;
+        if(s == r){
+            cout << r << "大正解！！" << endl;
+        }
+        else{
+            cout << r << "残念。不正解" << endl;
+        }
+    }
+    else{
+         cout << "error" << endl;
+    }
+}
